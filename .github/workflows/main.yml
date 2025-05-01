@@ -1,0 +1,46 @@
+name: DevOps Pipeline
+
+# Crear las siguientes variables como secrets dentro del settings del proyecto
+# TOKEN_GITHUB es un token de github que se puede crear con otro nombre de ser necesario, recordar colocar el nombre en el main.yml
+# SONAR_TOKEN es un token que se genera en sonarcloud
+# FTP_SERVER_STG servidor de hostinger
+# FTP_USERNAME_STG usuario de ftp de hostinger
+# FTP_PASSWORD_STG contraseña del usuario de ftp
+# FTP_SERVER_PRD servidor de hostinger
+# FTP_USERNAME_PRD usuario de ftp de hostinger
+# FTP_PASSWORD_PRD contraseña del usuario de ftp
+# DATABASE_HOST servidor de la base de datos
+# DATABASE_PORT puerto de la base de datos. Defaut 3306
+# DATABASE_NAME nombre de la base de datos
+# DATABASE_USERNAME usuario de la base de datos
+# DATABASE_PASSWORD contraseña de la base de datos
+# Author: Gaston Barbaccia
+
+on:
+  push:
+    branches:
+      - develop
+
+  pull_request:
+    branches:
+      - main
+
+
+jobs:            
+  deploy_staging:
+    name: Deploy Staging
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+    environment: 
+      name: staging
+      url: https://rci.devcode.com.ar/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_SERVER_STG }}
+          user: ${{ secrets.FTP_USERNAME_STG }}
+          password: ${{ secrets.FTP_PASSWORD_STG }}
+          localDir: "."
+          remoteDir: "."
