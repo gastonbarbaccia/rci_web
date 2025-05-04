@@ -19,7 +19,7 @@ name: DevOps Pipeline
 on:
   push:
     branches:
-      - develop
+      - staging
 
   pull_request:
     branches:
@@ -29,7 +29,7 @@ on:
 jobs:            
   deploy_staging:
     name: Deploy Staging
-    if: github.ref == 'refs/heads/develop'
+    if: github.ref == 'refs/heads/staging'
     runs-on: ubuntu-latest
     environment: 
       name: staging
