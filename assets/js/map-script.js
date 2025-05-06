@@ -77,7 +77,9 @@
 			var map = new google.maps.Map($this[0], mapOptions);
 			
 			//var image = 'images/icons/map-marker.png';
-			var image = theme_icon_path;
+			//var image = theme_icon_path;
+			var image = "http://maps.google.com/mapfiles/ms/icons/red-dot.png";
+
 			
 			if( dataContent !== undefined && dataContent !== false ) {
 				contentString = '<div class="map-data">' + '<h6>' + title + '</h6>' + '<div class="map-content">' + dataContent + '</div>' + '</div>';
