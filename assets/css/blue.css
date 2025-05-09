@@ -209,7 +209,7 @@ body {
 }
 
 .left-text {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   color: #6F8BA4;
   line-height: 28px;
@@ -220,6 +220,7 @@ body {
 }
 .left-text p {
   margin-bottom: 30px;
+  text-align:center;
 }
 .left-text p.dark {
   color: #3B566E;
@@ -306,15 +307,17 @@ body {
 }
 
 .btn-home {
-  width: 100%;
-  margin: auto;
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  display: flex;
+  align-items: center;        
+  justify-content: center;    
+  padding: 0 20px;
+  height: 50px;
+  line-height: normal;
+  text-align: center;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 100px 0px 100px 100px;
   background: #fff;
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.88px;
@@ -322,6 +325,7 @@ body {
   cursor: pointer;
   position: relative;
   overflow: hidden;
+  width: auto; 
 }
 .btn-home:before {
   content: "";
@@ -1598,6 +1602,7 @@ pricing
 --------------------------------------------- 
 */
 .pricing-item {
+  min-height: 90%;
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 5px;
@@ -1668,7 +1673,7 @@ pricing
 .pricing-item .pricing-body .number span {
   font-weight: 400;
   font-size: 16px;
-  color: #212943;
+  color: #c20d19;
   display: block;
 }
 .pricing-item .pricing-body .price-wrapper {
@@ -1737,6 +1742,17 @@ pricing
 .pricing-item .pricing-footer a:hover {
   background-image: linear-gradient(-135deg, #445370 0%, #5C83E3 100%);
   color: #fff;
+}
+.pricing-paragraph {
+  text-align: center; 
+  font-size: 18px; 
+  color: #212943;
+  line-height: 1.8; 
+  margin-top: 15px; 
+  padding: 0 20px; 
+  max-width: 90%; 
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 /* 
