@@ -1006,6 +1006,7 @@ welcome
 .welcome-area {
   overflow: hidden;
   position: relative;
+  height: 685px;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
@@ -1020,7 +1021,7 @@ welcome
 }
 .welcome-area .right-bg {
   float: right;
-  width: 89%;
+  width: auto;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -1028,13 +1029,20 @@ welcome
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
 }
+.welcome-area .right-bg img {
+  height: 100%;
+  width: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
 .welcome-area .right-bg:before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-image: linear-gradient(135deg, #445370 0%, #5C83E3 100%);
   opacity: 0.73;
 }
 .welcome-area .header-bg {
