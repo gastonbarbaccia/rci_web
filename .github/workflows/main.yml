@@ -44,3 +44,21 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD_STG }}
           localDir: "."
           remoteDir: "."
+
+  deploy_production:
+    name: Deploy Production
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: 
+      name: main
+      url: https://rciconsultora.com/
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload ftp
+        uses: sebastianpopp/ftp-action@releases/v2
+        with:
+          host: ${{ secrets.FTP_SERVER_PROD }}
+          user: ${{ secrets.FTP_USERNAME_PROD }}
+          password: ${{ secrets.FTP_PASSWORD_PROD }}
+          localDir: "."
+          remoteDir: "."
