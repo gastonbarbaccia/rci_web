@@ -2,14 +2,17 @@
 <html lang="en">
 
 <!-- Mirrored from demo.tempload.com/turing/blue-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 May 2025 00:02:12 GMT -->
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RCI - Consultoria</title>
-	<meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
-	<meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
-	<meta name="author" content="tempload"/>
+	<title>RCI Consultora | Inicio</title>
+	<meta name="description"
+		content="RCI Consulta es una empresa que ofrece desde 2006 servicios especializados en gestión de mora de créditos irrecuperables para financieras y bancos líderes, con estrategias personalizadas por cartera." />
+	<meta name="keywords"
+		content="RCI, gestión de mora, créditos irrecuperables, financieras, bancos, recuperación de deuda">
+	<meta name="author" content="RCI">
 
 	<!-- Favicon -->
 	<link rel="icon" type="image/png" href="assets/images/favicon/logo-300x105.png" />
@@ -26,13 +29,44 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118135390-1"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
-		function gtag(){dataLayer.push(arguments);}
+		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-118135390-1');
 	</script>
 </head>
+<style>
+	.whatsapp-float {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 999;
+		padding: 10px;
+		border-radius: 50%;
+		transition: transform 0.3s ease;
+	}
+
+	.whatsapp-float:hover {
+		transform: scale(1.1);
+	}
+
+	@media screen and (max-width: 768px) {
+		.whatsapp-text {
+			display: none;
+		}
+	}
+</style>
+
 <body>
+
+
+	<a href="https://wa.me/549XXXXXXXXXX?text=Quiero%20ser%20contactado" class="whatsapp-float" target="_blank"
+		title="Quiero ser contactado"
+		style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+		<span class="whatsapp-text" style="color: rgb(0, 0, 0); font-weight: bold; margin-bottom: 5px;color:#3eb849">Quiero ser contactado</span>
+		<img src="assets/images/whatsapp.svg" alt="WhatsApp" style="width: 60px; height: 60px;">
+	</a>
+
 
 	<!-- ***** Preloader Start ***** -->
 	<div id="preloader">
@@ -42,8 +76,8 @@
 		</div>
 	</div>
 	<!-- ***** Preloader End ***** -->
-	
-	
+
+
 	<!-- ***** Header Area Start ***** -->
 	<header class="header-area">
 		<div class="container">
@@ -52,7 +86,7 @@
 					<nav class="main-nav">
 						<!-- ***** Logo Start ***** -->
 						<a href="blue-index.html" class="logo">
-							<img src="assets/images/logo (1).png" alt="Turing" style="width: 100px; height: auto;"/>
+							<img src="assets/images/logo (1).png" alt="Turing" style="width: 100px; height: auto;" />
 						</a>
 						<!-- ***** Logo End ***** -->
 
@@ -60,9 +94,6 @@
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
 							<li><a href="index.html">Inicio</a></li>
-							<li><a href="#">Nosotros</a></li>
-							<li><a href="#">Nuestros servicios</a></li>
-							<li><a href="#">Metodología</a></li>
 							<li><a href="#">Contacto</a></li>
 						</ul>
 						<a class="menu-trigger">
@@ -71,8 +102,11 @@
 						<!-- ***** Menu End ***** -->
 
 						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons">
-							<li><a class="btn-nav-primary" href="#">Quiero ser contactado</a></li>
+						<ul class="header-buttons" style="margin-top: -2%;">
+							<li style="height: 100px;"><a class="btn-nav-primary"
+									href="https://autogestion.rciconsultora.com/" target="_blank"
+									style="padding-top: 10%;padding-bottom: 20%;background: #9e0101;color:white">QUIERO
+									PAGAR MI DEUDA</a></li>
 						</ul>
 						<!-- ***** Header Buttons End ***** -->
 					</nav>
@@ -87,7 +121,8 @@
 	<div class="welcome-area" id="welcome">
 		<!-- ***** Header Background Image Start ***** -->
 		<div class="right-bg">
-			<img src="assets/images/call-center-2021-08-29-15-31-57-utc-1024x722.jpeg" class="img-fluid float-right" alt="">
+			<img src="assets/images/call-center-2021-08-29-15-31-57-utc-1024x722.jpeg" class="img-fluid float-right"
+				alt="">
 		</div>
 		<!-- ***** Header Background Image End ***** -->
 
@@ -101,8 +136,9 @@
 				<div class="row">
 					<div class="col-lg-5 col-md-12 col-sm-12">
 						<h1>Experiencia y Resultados <br><span>RCI Consultora |</span></h1>
-						<p>Recuperamos activos morosos mediante una metodología de gestión personalizada y eficiente, transformándolo en un proceso fácil y rápido para tu empresa.</p>
-						<a href="#" class="btn-primary-line">Agendá una reunión</a>
+						<p>Recuperamos activos morosos mediante una metodología de gestión personalizada y eficiente,
+							transformándolo en un proceso fácil y rápido para tu empresa.</p>
+
 					</div>
 				</div>
 			</div>
@@ -127,53 +163,61 @@
 				<div class="col-lg-12">
 					<div class="row">
 						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
+							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
 							<a href="blue-features-single.html" class="features-small-item">
 								<div class="icon">
 									<i class="fa fa-money"></i>
 								</div>
 								<h5 class="features-title">Gestión de cobranza extrajudicial</h5>
-								<p>Ubicación del deudor. Generación de acuerdos de pago. Negociación de saldos pendientes. Documentación de deuda.</p>
+								<p>Ubicación del deudor. Generación de acuerdos de pago. Negociación de saldos
+									pendientes. Documentación de deuda.</p>
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
 
 						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
+							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
 							<a href="blue-features-single.html" class="features-small-item">
 								<div class="icon">
 									<i class="fa fa-comment-o"></i>
 
 								</div>
 								<h5 class="features-title">Consultoría</h5>
-								<p>Análisis de Carteras. Creación de campañas especiales. Gestión de Riesgo. Crediticio.</p>
+								<p>Análisis de Carteras. Creación de campañas especiales. Gestión de Riesgo. Crediticio.
+								</p>
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
 
 						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
+							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
 							<a href="blue-features-single.html" class="features-small-item">
 								<div class="icon">
 									<i class="fa fa-balance-scale"></i>
 
 								</div>
 								<h5 class="features-title">Judicialización</h5>
-								<p>Partners con Estudios Jurídicos a nivel nacional. Diligencia de trámites judiciales.</p>
+								<p>Partners con Estudios Jurídicos a nivel nacional. Diligencia de trámites judiciales.
+								</p>
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
 
 						<!-- ***** Features Small Item Start ***** -->
-						<div class="col-lg-3 col-md-6 col-sm-6 col-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-12"
+							data-scroll-reveal="enter bottom move 50px over 0.6s after 0.8s">
 							<a href="blue-features-single.html" class="features-small-item">
 								<div class="icon">
 									<i class="fa fa-pie-chart"></i>
 
 								</div>
 								<h5 class="features-title">Enriquecimiento de datos</h5>
-								<p>Verificación de Datos Demográficos. Verificación de Datos Laborales. Situación Patrimonial.</p>
-								
+								<p>Verificación de Datos Demográficos. Verificación de Datos Laborales. Situación
+									Patrimonial.</p>
+
 							</a>
 						</div>
 						<!-- ***** Features Small Item End ***** -->
@@ -191,32 +235,28 @@
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
 					<div class="text-center">
-						<h2 class="section-title">Lográ eficiencia en el proceso de cobranza con nuestras capacitaciones</h2>
-						<br><h3>Capacitaciones |</h3>
+						<h2 class="section-title">Lográ eficiencia en el proceso de cobranza con nuestras capacitaciones
+						</h2>
+						<br>
+						<h3>Capacitaciones |</h3>
 						<br>
 					</div>
 					<div class="left-text">
-						<p>A través de nuestra experiencia obtenida tras 25 años en la industria de crédito, desarrollamos distintos módulos de capacitación
-							 orientados a los distintos niveles de participación en el proceso de cobranzas.</p>
-						<div class="row">
-							<div class="col-12 d-flex jusify-content-center" >
-								<a class="btn-home active" href="blue-features-single.html">
-									<i class="fa fa-angle-right"></i>
-									<span>¿CÓMO FUNCIONAN NUESTRAS CAPACITACIONES?</span>
-								</a>
-							</div>
-						</div>
+						<p>A través de nuestra experiencia obtenida tras 25 años en la industria de crédito,
+							desarrollamos distintos módulos de capacitación
+							orientados a los distintos niveles de participación en el proceso de cobranzas.</p>
+				
 					</div>
 				</div>
 				<div class="col-lg-1"></div>
-				
+
 			</div>
 		</div>
 	</section>
 
 
 	<!-- ***** Features Big Item Start ***** -->
-	
+
 	<!-- ***** Features Big Item End ***** -->
 
 
@@ -237,7 +277,8 @@
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
 					<div class="left-text">
-						<p>Trabajamos con una visión clara: entender a fondo tu situación para ofrecer soluciones prácticas y resultados tangibles en el menor tiempo posible.</p>
+						<p>Trabajamos con una visión clara: entender a fondo tu situación para ofrecer soluciones
+							prácticas y resultados tangibles en el menor tiempo posible.</p>
 					</div>
 				</div>
 			</div>
@@ -245,7 +286,8 @@
 
 			<div class="row">
 				<!-- ***** Pricing Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+				<div class="col-lg-4 col-md-6 col-sm-12"
+					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
 					<div class="pricing-item active">
 						<div class="pricing-header">
 							<h3 class="pricing-title">METODOLOGÍA</h3>
@@ -257,13 +299,14 @@
 							<p class="pricing-paragraph">Nuestra metodología de trabajo está integrada por criterios
 								y estrategias enfocadas en la situación de cada cliente.</p>
 						</div>
-						
+
 					</div>
 				</div>
 				<!-- ***** Pricing Item End ***** -->
 
 				<!-- ***** Pricing Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+				<div class="col-lg-4 col-md-6 col-sm-12"
+					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
 					<div class="pricing-item active">
 						<div class="pricing-header">
 							<h3 class="pricing-title">ANÁLISIS</h3>
@@ -275,13 +318,14 @@
 							<p class="pricing-paragraph">Realizamos un Análisis profundo y exhaustivo de los datos antes
 								de comenzar a trabajar. <br><br></p>
 						</div>
-						
+
 					</div>
 				</div>
 				<!-- ***** Pricing Item End ***** -->
 
 				<!-- ***** Pricing Item Start ***** -->
-				<div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+				<div class="col-lg-4 col-md-6 col-sm-12"
+					data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
 					<div class="pricing-item active">
 						<div class="pricing-header">
 							<h3 class="pricing-title">ESTRATEGIA</h3>
@@ -290,7 +334,8 @@
 							<div class="number">
 								<span>3</span>
 							</div>
-							<p class="pricing-paragraph">Convertimos información, experiencia y objetividad en estrategias claras que garantizan resultados exitosos.</p>
+							<p class="pricing-paragraph">Convertimos información, experiencia y objetividad en
+								estrategias claras que garantizan resultados exitosos.</p>
 						</div>
 					</div>
 				</div>
@@ -308,8 +353,8 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="info">
-							<p>Te ayudamos a alcanzar tus objetivos con estrategias basadas en datos, conocimiento y experiencia.</p>
-							<a class="btn-primary-line" href="#">¡Descubre más!</a>
+							<p>Te ayudamos a alcanzar tus objetivos con estrategias basadas en datos, conocimiento y
+								experiencia.</p>
 						</div>
 					</div>
 				</div>
@@ -331,85 +376,89 @@
 				</div>
 				<div class="col-lg-12 col-md-12 col-sm-12 align-self-center mobile-bottom-fix">
 					<div class="left-text">
-						<p>Empresas y entidades que deciden hace años confiar en nuestro servicio y experiencia para conseguir el recupero crediticio exitoso y el logro de sus objetivos comerciales.</p>
+						<p>Empresas y entidades que deciden hace años confiar en nuestro servicio y experiencia para
+							conseguir el recupero crediticio exitoso y el logro de sus objetivos comerciales.</p>
 					</div>
 				</div>
 			</div>
 			<!-- ***** Section Title End ***** -->
 
-			
-	<div class="container mt-5">
-		<div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
-		  <div class="carousel-inner">
-  
-			<div class="carousel-item active">
-			  <div class="row">
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/1.png" class="d-block w-100" alt="Cliente 1">
-				</div>
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/2.png" class="d-block w-100" alt="Cliente 2">
-				</div>
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/3.png" class="d-block w-100" alt="Cliente 3">
-				</div>
-			  </div>
-			</div>
-  
-			<div class="carousel-item">
-			  <div class="row">
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/4.png" class="d-block w-100" alt="Cliente 1">
-				</div>
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/5.png" class="d-block w-100" alt="Cliente 2">
-				</div>
-				<div class="col-md-4">
-				  <img src="assets/images/clientes/6.png" class="d-block w-100" alt="Cliente 3">
-				</div>
-			  </div>
-			</div>
-  
-			<!-- Puedes agregar más bloques similares si tienes más imágenes -->
-  
-		  </div>
 
-		</div>
-	  </div>
+			<div class="container mt-5">
+				<div id="multiItemCarousel" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-inner">
+
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="assets/images/clientes/1.png" class="d-block w-100" alt="Cliente 1">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/2.png" class="d-block w-100" alt="Cliente 2">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/3.png" class="d-block w-100" alt="Cliente 3">
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="assets/images/clientes/4.png" class="d-block w-100" alt="Cliente 1">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/5.png" class="d-block w-100" alt="Cliente 2">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/6.png" class="d-block w-100" alt="Cliente 3">
+								</div>
+							</div>
+						</div>
+
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-md-4">
+									<img src="assets/images/clientes/7.png" class="d-block w-100" alt="Cliente 1">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/8.png" class="d-block w-100" alt="Cliente 2">
+								</div>
+								<div class="col-md-4">
+									<img src="assets/images/clientes/9.png" class="d-block w-100" alt="Cliente 3">
+								</div>
+							</div>
+						</div>
+						<!-- Puedes agregar más bloques similares si tienes más imágenes -->
+
+					</div>
+
+				</div>
+			</div>
 		</div>
 	</section>
 	<!-- ***** Blog End ***** -->
 
-	
+
 	<!-- ***** Footer Start ***** -->
 	<footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-5 col-md-12 col-sm-12">
 					<img src="assets/images/logo (1).png" class="logo" alt="Turing" style="width: 100px; height: auto;">
-					<div class="text">En RCI, combinamos más de 25 años de experiencia con un enfoque único en cada cliente. Nuestra metodología de trabajo, basada en el análisis profundo y la objetividad, nos permite ofrecer soluciones personalizadas y efectivas para alcanzar resultados rápidos y sostenibles.</div>
+					<div class="text">En RCI, combinamos más de 25 años de experiencia con un enfoque único en cada
+						cliente. Nuestra metodología de trabajo, basada en el análisis profundo y la objetividad, nos
+						permite ofrecer soluciones personalizadas y efectivas para alcanzar resultados rápidos y
+						sostenibles.</div>
 				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Menu principal</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Inicio</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Nosotros</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Nuestros servicios</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Metodología</span></a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Centro de ayuda</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Politica de Privacidad</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Términos y condiciones</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contacto</span></a></li>
-					</ul>
+				
+				<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+					
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h5>Contáctanos</h5>
+					<h5>Contacto</h5>
 					<div class="address">
-						<p>Tel: (11) 3220-8087</p>
+						<p>Tel: (011) 7078-1039</p>
 						<p><span>E-Mail:</span><a href="#">cobranzas@rciconsultora.com</a></p>
 						<ul class="social">
 							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
@@ -423,7 +472,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="copyright">© 2025 DevCode. All Rights Reserved.</p>
+					<p class="copyright">© 2025 RCI Consultora. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
@@ -445,11 +494,12 @@
 	<script src="assets/js/waypoints.min.js"></script>
 	<script src="assets/js/jquery.counterup.min.js"></script>
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="assets/js/imgfix.min.js"></script>	
+	<script src="assets/js/imgfix.min.js"></script>
 
 	<!-- Global Init -->
 	<script src="assets/js/custom.js"></script>
 </body>
 
 <!-- Mirrored from demo.tempload.com/turing/blue-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 02 May 2025 00:03:23 GMT -->
+
 </html>
