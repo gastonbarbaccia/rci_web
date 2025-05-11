@@ -20,6 +20,7 @@ on:
   push:
     branches:
       - staging
+      - main
 
   pull_request:
     branches:
