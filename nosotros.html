@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RCI - Consultora</title>
+	<title>RCI - Consultora | Nosotros</title>
 	<meta name="description" content="Turing - IT Solutions and Corporate template by tempload." />
 	<meta name="keywords" content="turing, startup, saas, agency, development, html, template, tempload" />
 	<meta name="author" content="tempload"/>
@@ -23,6 +23,7 @@
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118135390-1"></script>
+	
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag(){dataLayer.push(arguments);}
@@ -31,7 +32,47 @@
 		gtag('config', 'UA-118135390-1');
 	</script>
 </head>
+<style>
+	.whatsapp-float {
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		z-index: 999;
+		padding: 10px;
+		border-radius: 50%;
+		transition: transform 0.3s ease;
+	}
+
+	.whatsapp-float:hover {
+		transform: scale(1.1);
+	}
+
+	@media screen and (max-width: 768px) {
+		.whatsapp-text {
+			display: none;
+		}
+		.welcome-area {
+			height:100%;
+		}
+		.pay-mobile{
+			margin-top:5% !important;
+			display: block !important;
+			width: 100% !important;
+			background: #9e0101 !important;
+			color:white !important;
+		}
+	}
+</style>
 <body>
+
+	<a href="https://api.whatsapp.com/send/?phone=5491133096809&text=Hola%2C%20quiero%20recibir%20informaci%C3%B3n
+" class="whatsapp-float" target="_blank"
+		title="Quiero ser contactado"
+		style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+		<span class="whatsapp-text" style="color: rgb(0, 0, 0); font-weight: bold; margin-bottom: 5px;color:#3eb849">Quiero ser contactado</span>
+		<img src="assets/images/whatsapp.svg" alt="WhatsApp" style="width: 60px; height: 60px;">
+	</a>
+
 
 	<!-- ***** Preloader Start ***** -->
 	<div id="preloader">
@@ -58,26 +99,18 @@
 
 						<!-- ***** Menu Start ***** -->
 						<ul class="nav">
-							<li><a href="blue-index.html#welcome">Inicio</a></li>
-							<li class="submenu">
-								<a href="javascript:;">Nuestros Servicios</a>
-								<ul>
-									<li><a href="blue-index.html#features">Capacitaciones</a></li>
-									<li><a href="blue-index.html#our-team">Equipo</a></li>
-									<li><a href="blue-index.html#pricing-plans">Nuestro trabajo</a></li>
-									<li><a href="blue-index.html#blog">Clientes</a></li>
-								</ul>
+							<li><a href="index.html">Inicio</a></li>
+							<li>
+								<a href="nosotros.html">Nosotros</a>
 							</li>
-							<li class="submenu">
-								<a href="javascript:;">Metodología</a>
-								<ul>
-									<li><a href="blue-about.html">Sobre nosotros</a></li>
-									<li><a href="blue-features.html">Servicios</a></li>
-									<li><a href="blue-faq.html">Preguntas</a></li>
-									<li><a href="blue-blog.html">Blog</a></li>
-								</ul>
+							<li>
+								<a href="servicios.html">Nuestros Servicios</a>
 							</li>
-							<li><a href="#">Capacitaciones Empresariales</a></li>
+							<li>
+								<a href="contacto.html">Contacto</a>
+								
+							</li>
+							
 						</ul>
 						<a class="menu-trigger">
 							<span>Menu</span>
@@ -85,9 +118,11 @@
 						<!-- ***** Menu End ***** -->
 
 						<!-- ***** Header Buttons Start ***** -->
-						<ul class="header-buttons">
-							<li><a class="btn-nav-line" href="blue-features.html">Nosotros</a></li>
-							<li><a class="btn-nav-primary" href="blue-contact.html">Contacto</a></li>
+						<ul class="header-buttons" style="margin-top: -15px;">
+							<li style="height: 100px;"><a class="btn-nav-primary"
+									href="https://autogestion.rciconsultora.com/" target="_blank"
+									style="padding-top: 5%;padding-bottom: 20%;background: #9e0101;color:white">QUIERO
+									PAGAR MI DEUDA</a></li>
 						</ul>
 						<!-- ***** Header Buttons End ***** -->
 					</nav>
@@ -100,7 +135,7 @@
 
 	<section class="page">
 		<!-- ***** Page Top Start ***** -->
-		<div class="cover" data-image="assets/images/photos/parallax-counter.jpg">
+			<div class="cover" data-image="assets/images/photos/parallax-counter.jpg">
 			<div class="page-top">
 				<div class="container">
 					<div class="row">
@@ -109,8 +144,8 @@
 						</div>
 						<div class="col-lg-12">
 							<ol class="breadcrumb">
-								<li><a href="blue-index.html">Inicio</a></li>
-								<li class="active">Sobre nosotros</li>
+								<li><a href="index.html">Inicio</a></li>
+								<li class="active">Nosotros</li>
 							</ol>
 						</div>
 					</div>
@@ -126,13 +161,14 @@
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="about">
+							<br>
 							<div class="about-image">
-								<img src="assets/images/photos/about/1.jpg" alt="">
+								<img src="assets/images/photos/about/imgNosotros.JPG" alt="">
 							</div>
 							<div class="about-text">
-								<h2>Our Mission</h2>
-								<p>Praesent posuere nec nisl quis hendrerit. Duis sit amet rutrum lorem. Ut maximus orci in metus blandit, et placerat dolor congue.</p>
-								<p>Proin tempor ligula nec dolor facilisis mattis. Suspendisse potenti. Suspendisse efficitur turpis quis risus molestie cursus. Cras malesuada a massa et aliquet. Nunc vel urna eu neque consectetur imperdiet. Sed pretium neque ligula, ac vehicula massa aliquet eu.</p>
+								<h2>Quiénes somos |</h2>
+								<p>RCI inicia su actividad en el año 2006 realizando la gestión de mora de créditos irrecuperables de financieras y Bancos de primera línea.</p>
+								<p>Trabajamos y brindamos la mejor estrategia a medida de la cartera encomendada por nuestros clientes.</p>
 							</div>
 						</div>
 					</div>
@@ -141,20 +177,43 @@
 
 
 			<!-- ***** Parallax Start ***** -->
-			<div class="parallax margin-bottom-100" id="parallax-text">
-				<div class="parallax-content">
+		<!-- ***** Parallax Start ***** -->
+					<section class="section padding-bottom-80 colored" id="features">
 					<div class="container">
 						<div class="row">
-							<div class="col-lg-12">
-								<div class="info">
-									<p>We design and develop <span>web apps</span> that delight your users and grow your business.</p>
-									<a class="btn-white-line" href="#">Contact Us</a>
+						<div class="col-lg-12">
+							<div class="about-text">
+							<h3 class="text-center mb-5" style="font-size: 2rem; font-weight: 600;">Fortalezas y Valores |</h3>
+							<div class="row">
+								<!-- Columna izquierda -->
+								<div class="col-md-6">
+								<ul class="custom-list">
+									<li><span class="icon">✔</span> Dinamismo y eficacia en la generación de acuerdos.</li>
+									<li><span class="icon">✔</span> Altas tasas de contabilidad sobre clientes inubicables.</li>
+									<li><span class="icon">✔</span> Estándares de calidad y responsabilidad.</li>
+									<li><span class="icon">✔</span> Rápidos y eficaces niveles de respuesta por parte de los deudores.</li>
+								</ul>
 								</div>
-							</div>
+
+								<!-- Columna derecha -->
+								<div class="col-md-6">
+								<ul class="custom-list">
+									<li><span class="icon">✔</span> Reportes a medida del requerimiento de nuestros clientes.</li>
+									<li><span class="icon">✔</span> Capacitación y feedback constante con los negociadores.</li>
+									<li><span class="icon">✔</span> Asesoramiento legal permanente.</li>
+									<li><span class="icon">✔</span> Innovación / Superación / Resultados.</li>
+								</ul>
+								</div>
+							</div> <!-- cierre de row -->
+							</div> <!-- cierre de about-text -->
+						</div>
 						</div>
 					</div>
-				</div>
-			</div>
+					</section>
+
+
+	<br><br><br>
+
 			<!-- ***** Parallax End ***** -->
 
 			<div class="container">
@@ -162,12 +221,12 @@
 					<div class="col-lg-12">
 						<div class="about left margin-bottom-30">
 							<div class="about-image">
-								<img src="assets/images/photos/about/2.jpg" alt="">
+								<img src="assets/images/photos/about/img2.jpg" alt="">
 							</div>
 							<div class="about-text">
-								<h2>Our Vision</h2>
-								<p>Praesent posuere nec nisl quis hendrerit. Duis sit amet rutrum lorem. Ut maximus orci in metus blandit, et placerat dolor congue.</p>
-								<p>Proin tempor ligula nec dolor facilisis mattis. Suspendisse potenti. Suspendisse efficitur turpis quis risus molestie cursus.</p>
+								<h2>Equipo |</h2>
+								<p>Nuestro Staff opera hace más de 20 años en la recuperación crediticia y nuestra mayor experiencia está enfocada y desarrollada en carteras de CONSUMO.</p>
+								<p>Analizamos, evaluamos y detectamos las problemáticas de nuestros clientes, ofreciendo las soluciones adecuadas a sus necesidades reales.</p>
 							</div>
 						</div>
 					</div>
@@ -190,25 +249,13 @@
 					<div class="text">En RCI, combinamos más de 25 años de experiencia con un enfoque único en cada cliente. Nuestra metodología de trabajo, basada en el análisis profundo y la objetividad, nos permite ofrecer soluciones personalizadas y efectivas para alcanzar resultados rápidos y sostenibles.</div>
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Información clave</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Sobre nosotros</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Servicios</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Preguntas</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Blog</span></a></li>
-					</ul>
+					
 				</div>
 				<div class="col-lg-2 col-md-4 col-sm-6 col-6">
-					<h5>Centro de ayuda</h5>
-					<ul class="footer-nav">
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Politica de Privacidad</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Términos y condiciones</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Soporte Técnico</span></a></li>
-						<li><a href="#"><i class="fa fa-angle-right"></i><span>Contacto</span></a></li>
-					</ul>
+					
 				</div>
 				<div class="col-lg-3 col-md-4 col-sm-12">
-					<h5>Contáctanos</h5>
+					<h5>Contacto</h5>
 					<div class="address">
 						<p>Tel: (11) 3220-8087</p>
 						<p><span>E-Mail:</span><a href="#">cobranzas@rciconsultora.com</a></p>
@@ -224,7 +271,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="copyright">© 2021 Turing. All Rights Reserved.</p>
+					<p class="copyright">© 2025 RCI Consultora. All Rights Reserved.</p>
 				</div>
 			</div>
 		</div>
