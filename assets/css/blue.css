@@ -140,6 +140,7 @@ body {
   background: #F7FAFD;
 }
 
+
 .left-heading.light .section-title {
   color: #ffffff;
 }
@@ -1245,13 +1246,69 @@ features
   padding-top: 0px;
   margin-top: -100px;
 }
+.why-choose-us {
+  background-color: #fff;
+  padding: 60px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.why-choose-us h2 {
+  font-size: 32px;
+  text-align: left;
+  color: #001f3f;
+}
+
+.why-choose-us h2 strong {
+  color: #001f3f;
+  font-weight: bold;
+}
+
+.why-choose-us .mission {
+  font-size: 18px;
+  margin-top: 20px;
+  max-width: 600px;
+  color: #666;
+  border-left: 3px solid #e74c3c;
+  padding-left: 15px;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 100px;
+}
+
+.feature {
+  flex: 1 1 200px;
+  max-width: 240px;
+  text-align: center;
+}
+
+.feature .icon {
+  font-size: 40px;
+  color: #e30613;
+  margin-bottom: 10px;
+}
+
+.feature h4 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+
 
 .features-home .row > .col-lg-3 {
   display: flex;
 }
 
 .features-small-item {
-  display: block;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
   background: #FFFFFF;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
   border-radius: 40px 0 40px 40px;
@@ -2309,7 +2366,6 @@ pages
   height: 100%;
   z-index: 2;
   opacity: 0.3;
-  background-image: linear-gradient(127deg, #445370 0%, #5C83E3 91%);
 }
 .page .page-bottom .about .about-text {
   position: absolute;
@@ -2330,7 +2386,15 @@ pages
   font-size: 24px;
   line-height: 38px;
   letter-spacing: 1.75px;
-  color: #445370;
+  color: #c20d19;
+  margin-bottom: 20px;
+}
+.page .about-text h3 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 38px;
+  letter-spacing: 1.75px;
+  color:#c20d19;
   margin-bottom: 20px;
 }
 .page .page-bottom .about .about-text p {
@@ -2339,6 +2403,34 @@ pages
   line-height: 26px;
   margin-bottom: 20px;
 }
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.custom-list li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+.custom-list .icon {
+  color: #c20d19; 
+  margin-right: 10px;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+.page .about-text li{
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+
 .page .page-bottom .features-small-item p {
   margin-bottom: 0px !important;
 }
